@@ -1,0 +1,27 @@
+.productSearchResults__container{
+    width: 180px;
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+.productSearchResults__result{
+    padding: 1px 10px 1px 10px;
+}
+
+.productSearchResults__result:hover{
+    background-color: #ebebeb;
+}
+
+.productSearchResults__heading{
+    color: blue;
+}
+
+.productSearchResults__content{
+    text-transform: capitalize;
+    font-size: 12px;
+}
+
+.productSearchResults__meta{
+    font-size: 12px;
+    color: 	#696969
+}

@@ -1,0 +1,53 @@
+{
+  "name": "uniquote",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.11.2",
+    "@material-ui/icons": "^4.11.2",
+    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/react": "^11.2.2",
+    "@testing-library/user-event": "^12.5.0",
+    "date-and-time": "^0.14.2",
+    "dotenv": "^8.2.0",
+    "firebase": "^8.1.2",
+    "image-hash": "^4.0.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.1",
+    "web-vitals": "^0.2.4"
+  },
+  "scripts": {
+    "start": "react-app-env start",
+    "build": "react-app-env build",
+    "build:development": "react-app-env --env-file=development.env build",
+    "build:production": "react-app-env --env-file=production.env build",
+    "deploy:production-hosting": "(npm run build:production & firebase use production) && firebase deploy --only hosting",
+    "deploy:development-hosting": "(npm run build:development & firebase use development) && firebase deploy --only hosting",
+    "deploy:all": "(npm run deploy:development-hosting & npm run deploy:production-hosting)",
+    "test": "react-app-env test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "react-app-env": "^1.2.3"
+  }
+}
